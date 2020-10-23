@@ -11,9 +11,7 @@ $qrCode = new QrCode('https://ficohsa.pixelpay.app/pixel-pruebas/LtCZnnMjE3NTE=/
 $writer = new QrWriter(QrWriter::FRAME_ES);
 $qrCode->setWriter($writer);
 
-$qrCode->setMargin(20);
-
-// $qrCode->setMargin(80);
-// $qrCode->setSize(1000);
+$qrCode->setMargin(30);
+$qrCode->setSize(500);
 
 echo $qrCode->writeString();
